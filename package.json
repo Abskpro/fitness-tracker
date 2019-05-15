@@ -1,0 +1,17 @@
+{
+  "name": "fitness",
+  "version": "1.0.0",
+  "description": "fitplan",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "abcd"
+  ],
+  "author": "absk",
+  "license": "ISC",
+  "dependencies": {
+    "requirejs": "^2.3.6"
+  }
+}

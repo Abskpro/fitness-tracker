@@ -1,0 +1,61 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <!--<script data-main="scripts/main" src="scripts/require.js"></script>-->
+</head>
+<body>
+    <h1 class="tracker">T.R.A.C.K.E.R</h1>
+    <div class="tab">
+            <div class="buttonContainer">
+                <button onclick="showPanel(0)">Track</button>
+                <button onclick="showPanel(1)">Stats</button>
+                <button onclick="showPanel(2)">Notes</button>
+                <button onclick="showPanel(3)">Info</button>
+             </div>
+            
+            <div class="tabpanel" id="newWork">
+                <form>
+                <div class="new-Container" id="add_new">
+                    <li>
+                    <label for="new-workout">Workout:</label>
+                    <select class="new-workout" id="new-Ex"placeholder="Pick your workout">
+                                <option value="benchPress">Bench press</option>
+                                <option value="Squat">Squat</option>
+                                <option value="dumbellCurl">Dumbell Curl</option>
+                                <option value="bentoverRow">Bent Over Row</option>
+                                <option value="overHeadTricep">Over Head Tricep</option>
+                                <option value="Deadlift">Deadlift</option>
+                    </select>
+                    </li>
+                    <br> 
+                    <li>
+                        <label for="set-number">Set Number: </label>
+                        <input type="number" class="add-set" id="new-set" placeholder="set" min="1" max="15">
+                    </li>
+                    <br>
+
+                    <li>
+                        <label for="weight">Weight:</label>
+                        <input class="add-weight" id="new-weight" placeholder="Kg">
+                    <br>
+                    </li>
+                    <br>
+            
+                    <li>
+                        <label for="repitition">Reps:</label>
+                        <input type="number" class="add-reps" id="new-reps" placeholder="rep" min="1" max="20">
+                    </li>
+                    <br><br>
+                </div>
+                </form>
+            </div>
+            <button id="addnew">Add new</button>
+                <button id="submit">Save</button>
+
+    </div>
+    <script src="script.js"></script>
+    <script src="data.js"></script>
+</body>
+</html>
