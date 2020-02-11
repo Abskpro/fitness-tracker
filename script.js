@@ -52,7 +52,6 @@ document.querySelector("#submit").addEventListener("click", e => {
   };
 
   const demo = Object.create(container);
-    console.log(demo);
   (() => {
     ///get and store value of all the workout added
     for (let i = 0; i < workout.length; i++) {
